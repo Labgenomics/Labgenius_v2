@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\CPlot">
+      <UniqueIdentifier>{a7a93a59-179d-473f-afef-7721d1e42be8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\CPlot">
+      <UniqueIdentifier>{e3c17a7d-a7a7-430e-b1b2-3cd7e9fab364}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LabGenius_PCR_viewer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LabGenius_PCR_viewerDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MicroPCR\CPlot Sources\Axis.h">
+      <Filter>헤더 파일\CPlot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MicroPCR\CPlot Sources\AxisSettings.h">
+      <Filter>헤더 파일\CPlot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MicroPCR\CPlot Sources\Chart.h">
+      <Filter>헤더 파일\CPlot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MicroPCR\CPlot Sources\ChartData.h">
+      <Filter>헤더 파일\CPlot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MicroPCR\CPlot Sources\ColorControl.h">
+      <Filter>헤더 파일\CPlot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MicroPCR\CPlot Sources\ColorTables.h">
+      <Filter>헤더 파일\CPlot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MicroPCR\CPlot Sources\CPlotResource.h">
+      <Filter>헤더 파일\CPlot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MicroPCR\CPlot Sources\CPlotUtility.h">
+      <Filter>헤더 파일\CPlot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MicroPCR\CPlot Sources\DataSettingsDialog.h">
+      <Filter>헤더 파일\CPlot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MicroPCR\CPlot Sources\ImagePalette.h">
+      <Filter>헤더 파일\CPlot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MicroPCR\CPlot Sources\ImagePlotSettingsDialog.h">
+      <Filter>헤더 파일\CPlot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MicroPCR\CPlot Sources\PlotSettingsDialog.h">
+      <Filter>헤더 파일\CPlot</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LabGenius_PCR_viewer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LabGenius_PCR_viewerDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MicroPCR\CPlot Sources\Axis.cpp">
+      <Filter>소스 파일\CPlot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MicroPCR\CPlot Sources\AxisSettings.cpp">
+      <Filter>소스 파일\CPlot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MicroPCR\CPlot Sources\Chart.cpp">
+      <Filter>소스 파일\CPlot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MicroPCR\CPlot Sources\ChartData.cpp">
+      <Filter>소스 파일\CPlot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MicroPCR\CPlot Sources\ColorControl.cpp">
+      <Filter>소스 파일\CPlot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MicroPCR\CPlot Sources\CPlotUtility.cpp">
+      <Filter>소스 파일\CPlot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MicroPCR\CPlot Sources\DataSettingsDialog.cpp">
+      <Filter>소스 파일\CPlot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MicroPCR\CPlot Sources\ImageChart.cpp">
+      <Filter>소스 파일\CPlot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MicroPCR\CPlot Sources\ImagePalette.cpp">
+      <Filter>소스 파일\CPlot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MicroPCR\CPlot Sources\ImagePlotSettingsDialog.cpp">
+      <Filter>소스 파일\CPlot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MicroPCR\CPlot Sources\PlotSettingsDialog.cpp">
+      <Filter>소스 파일\CPlot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MicroPCR\CPlot Sources\XYChart.cpp">
+      <Filter>소스 파일\CPlot</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LabGenius_PCR_viewer.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="..\MicroPCR\CPlot Sources\CPlotResources.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\LabGenius_PCR_viewer.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\LabGenius_PCR_viewer.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\rox.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\off.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\hex.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\fam.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\cy5.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

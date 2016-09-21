@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2A8EAA7B-EB00-405A-B9AC-E50E6FC792F1}</ProjectGuid>
+    <RootNamespace>LabGenius_PCR_viewer</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\CPlot Sources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>./Lib/sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\CPlot Sources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>./Lib/sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\MicroPCR\CPlot Sources\Axis.h" />
+    <ClInclude Include="..\MicroPCR\CPlot Sources\AxisSettings.h" />
+    <ClInclude Include="..\MicroPCR\CPlot Sources\Chart.h" />
+    <ClInclude Include="..\MicroPCR\CPlot Sources\ChartData.h" />
+    <ClInclude Include="..\MicroPCR\CPlot Sources\ColorControl.h" />
+    <ClInclude Include="..\MicroPCR\CPlot Sources\ColorTables.h" />
+    <ClInclude Include="..\MicroPCR\CPlot Sources\CPlotResource.h" />
+    <ClInclude Include="..\MicroPCR\CPlot Sources\CPlotUtility.h" />
+    <ClInclude Include="..\MicroPCR\CPlot Sources\DataSettingsDialog.h" />
+    <ClInclude Include="..\MicroPCR\CPlot Sources\ImagePalette.h" />
+    <ClInclude Include="..\MicroPCR\CPlot Sources\ImagePlotSettingsDialog.h" />
+    <ClInclude Include="..\MicroPCR\CPlot Sources\PlotSettingsDialog.h" />
+    <ClInclude Include="LabGenius_PCR_viewer.h" />
+    <ClInclude Include="LabGenius_PCR_viewerDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\MicroPCR\CPlot Sources\Axis.cpp" />
+    <ClCompile Include="..\MicroPCR\CPlot Sources\AxisSettings.cpp" />
+    <ClCompile Include="..\MicroPCR\CPlot Sources\Chart.cpp" />
+    <ClCompile Include="..\MicroPCR\CPlot Sources\ChartData.cpp" />
+    <ClCompile Include="..\MicroPCR\CPlot Sources\ColorControl.cpp" />
+    <ClCompile Include="..\MicroPCR\CPlot Sources\CPlotUtility.cpp" />
+    <ClCompile Include="..\MicroPCR\CPlot Sources\DataSettingsDialog.cpp" />
+    <ClCompile Include="..\MicroPCR\CPlot Sources\ImageChart.cpp" />
+    <ClCompile Include="..\MicroPCR\CPlot Sources\ImagePalette.cpp" />
+    <ClCompile Include="..\MicroPCR\CPlot Sources\ImagePlotSettingsDialog.cpp" />
+    <ClCompile Include="..\MicroPCR\CPlot Sources\PlotSettingsDialog.cpp" />
+    <ClCompile Include="..\MicroPCR\CPlot Sources\XYChart.cpp" />
+    <ClCompile Include="LabGenius_PCR_viewer.cpp" />
+    <ClCompile Include="LabGenius_PCR_viewerDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\MicroPCR\CPlot Sources\CPlotResources.rc" />
+    <ResourceCompile Include="LabGenius_PCR_viewer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\LabGenius_PCR_viewer.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\cy5.bmp" />
+    <Image Include="res\fam.bmp" />
+    <Image Include="res\hex.bmp" />
+    <Image Include="res\LabGenius_PCR_viewer.ico" />
+    <Image Include="res\off.bmp" />
+    <Image Include="res\rox.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="LabGenius_PCR_viewer.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
